@@ -23,7 +23,7 @@ case $ACAP_ARCH in
 esac
 
 curl "https://pkgs.tailscale.com/stable/${TAILSCALE_FILENAME}.tgz" \
-    | tar --extract --strip-components=1 --directory app "${TAILSCALE_FILENAME}/tailscaled"
+    | tar --extract --strip-components=1 --directory app/lib "${TAILSCALE_FILENAME}/tailscaled"
 
 docker run --rm --volume "$PWD/app:/opt/app" \
     axisecp/acap-sdk:${ACAP_VERSION}-${ACAP_ARCH} \
