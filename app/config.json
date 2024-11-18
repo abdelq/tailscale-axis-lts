@@ -1,4 +1,5 @@
 {
   "version": "alpha0",
+  "operatoruser": "sdk",
   "runwebclient": true
 }
