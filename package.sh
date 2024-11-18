@@ -28,3 +28,5 @@ curl "https://pkgs.tailscale.com/stable/${TAILSCALE_FILENAME}.tgz" \
 docker run --rm --volume "$PWD/app:/opt/app" \
     axisecp/acap-sdk:${ACAP_VERSION}-${ACAP_ARCH} \
     sh -c ". /opt/axis/acapsdk/environment-setup* && create-package.sh"
+
+rm -f app/tailscaled
