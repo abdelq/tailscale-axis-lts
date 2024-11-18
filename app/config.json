@@ -1,5 +1,6 @@
 {
   "version": "alpha0",
-  "operatoruser": "sdk",
-  "runwebclient": true
+  "locked": false,
+  "authkey": "file:/usr/local/packages/tailscaled/authkey.txt",
+  "operatoruser": "sdk"
 }
